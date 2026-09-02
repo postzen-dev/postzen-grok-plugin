@@ -1,0 +1,13 @@
+{
+  "name": "postzen",
+  "version": "1.0.0",
+  "description": "Schedule and publish social media posts across 10 platforms (X, Instagram, TikTok, LinkedIn, Facebook, YouTube, Threads, Pinterest, Bluesky, Telegram) from Grok Build via PostZen's hosted MCP server, with posting queues and analytics reports.",
+  "author": {
+    "name": "PostZen",
+    "url": "https://www.postzen.dev"
+  },
+  "repository": "https://github.com/postzen-dev/postzen-grok-plugin",
+  "homepage": "https://www.postzen.dev",
+  "license": "MIT",
+  "keywords": ["postzen", "social-media", "scheduling", "publishing", "analytics", "mcp"]
+}

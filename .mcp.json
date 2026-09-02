@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "postzen": {
+      "type": "http",
+      "url": "https://mcp.postzen.dev/mcp",
+      "note": "PostZen's hosted MCP server. Uses OAuth: on first connection you are prompted to sign in to your PostZen account in the browser and choose which profiles to expose; no API key to paste. Tools: create/schedule/queue posts, upload media, manage queue slots, connect social accounts, Pinterest boards, analytics, webhooks."
+    }
+  }
+}
