@@ -10,7 +10,7 @@ The plugin connects Grok Build to the hosted [PostZen MCP server](https://mcp.po
 2. Open the MCP servers tab with `/mcp`, select **postzen**, and press `i` to sign in. Your browser opens the PostZen dashboard, where you approve access and choose which profiles to expose. No API key to paste.
 3. Once postzen shows **ready**, ask Grok to post something.
 
-Don't have a PostZen account? Sign up at [postzen.dev](https://www.postzen.dev) and connect your social accounts in the [dashboard](https://app.postzen.dev) — or let Grok walk you through it with `/postzen-connect`.
+Don't have a PostZen account? Sign up at [postzen.dev](https://www.postzen.dev/?utm_source=grok&utm_medium=plugin&utm_campaign=postzen-grok-plugin) and connect your social accounts in the [dashboard](https://app.postzen.dev/?utm_source=grok&utm_medium=plugin&utm_campaign=postzen-grok-plugin) — or let Grok walk you through it with `/postzen-connect`.
 
 ### Headless / CI use
 
@@ -91,7 +91,7 @@ grok --plugin-dir ./postzen-grok-plugin
 
 ## Links
 
-- [PostZen](https://www.postzen.dev) · [Dashboard](https://app.postzen.dev) · [API docs](https://docs.postzen.dev) · [Status](https://status.postzen.dev)
+- [PostZen](https://www.postzen.dev/?utm_source=grok&utm_medium=plugin&utm_campaign=postzen-grok-plugin) · [Dashboard](https://app.postzen.dev/?utm_source=grok&utm_medium=plugin&utm_campaign=postzen-grok-plugin) · [API docs](https://docs.postzen.dev) · [Status](https://status.postzen.dev)
 - Prefer a raw API? See the [agent quickstart](https://www.postzen.dev/agent-quickstart.md), the [Node SDK](https://www.npmjs.com/package/@postzen/node), [Python SDK](https://pypi.org/project/postzen-sdk/), or [CLI](https://www.npmjs.com/package/@postzen/cli).
 - Using Claude Code instead? See the [PostZen Claude Code plugin](https://github.com/postzen-dev/postzen-claude-plugin).
 
