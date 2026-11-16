@@ -2,6 +2,12 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.2.3 — directory listing fixes
+
+- Claude Code: the README's headless setup section now links to the PostZen docs. The plugin connects with OAuth.
+- Claude Code: added a plugin icon and a privacy policy link to the manifest. No changes to skills or the MCP connection.
+- Grok, Cursor and Codex: version bump only.
+
 ## 1.2.2 — tagged links
 
 Links to postzen.dev and the PostZen dashboard in the README and the connect skill now carry UTM parameters naming the plugin, so PostZen can tell which plugin a sign-up came from. No changes to skills, commands or the MCP connection.
