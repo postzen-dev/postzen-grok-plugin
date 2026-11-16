@@ -16,7 +16,7 @@ Walk the user through linking a social account so posts can target it, using the
    - A `connected` status proves auth, not publishing. If the user is connecting because publishing failed, suggest a quick test post (a draft, or a real post they confirm) to exercise the publish path. Sometimes users will forget to approve all permissions requested by the platform's OAuth flow.
 4. **Platform-specific follow-ups:**
    - **Pinterest**: after connecting, a default board should be selected — use `listPinterestBoardsForSelection` and `selectPinterestBoard` (or `createPinterestBoard` for a new one). Both take the `state` from `createConnectUrl`, which stays valid for board selection for 30 minutes from when the connect URL was created, so do this right after connecting.
-   - **Bluesky**: uses an app password rather than OAuth — the `authUrl` is a PostZen-hosted page where the user enters their handle and an app password generated in their Bluesky settings; the connection completes when they submit it. Never ask the user to paste the app password into this chat.
+   - **Bluesky**: does not use OAuth — the `authUrl` is a PostZen-hosted sign-in page where the user enters their Bluesky handle and a separate app-only login they create in Bluesky under Settings → Privacy and Security (not their main account login); the connection completes when they submit it. Never ask the user to paste that login into this chat.
    - **Telegram**: no OAuth either — the `authUrl` is a PostZen-hosted page that issues a short-lived access code. The user adds @PostZenScheduleBot as an administrator of their channel or group and sends that code to the bot; the connection completes when the bot receives it.
 
 ## Disconnecting
@@ -25,5 +25,5 @@ Walk the user through linking a social account so posts can target it, using the
 
 ## Cautions
 
-- Never ask for or handle the user's social media passwords, app passwords, or tokens directly; the browser-based connect flow is the only path.
+- Never ask for or handle the user's social media login details directly; the browser-based connect flow is the only path.
 - If a connection repeatedly fails, point the user to the PostZen dashboard (https://app.postzen.dev/?utm_source=grok&utm_medium=plugin&utm_campaign=postzen-grok-plugin&utm_content=connect_skill) where the same flow exists with more error detail.
